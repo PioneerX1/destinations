@@ -7,7 +7,6 @@ function Place(placeName, where, date, landmarks, notes) {
   this.notes = notes;  //string
 }
 
-
 //USER INTERFACE LOGIC
 $(document).ready(function() {
   $("form#new-destination").submit(function(event) {
@@ -21,5 +20,25 @@ $(document).ready(function() {
 
     var newPlace = new Place(inputPlaceName, inputWhere, inputDate, inputLandmarks, inputNotes);
 
+    $("ul#places").append("<li><span class='place'>" + newPlace.placeName + "</span></li>");
+    $("#list-of-places").show();
+
+    //reset values on form again to avoid resubmitting same data
+    $("input#place-name").val("");
+    $("input#where").val("");
+    $("input#date").val("");
+    $("input#landmarks").val("");
+    $("input#notes").val("");
+
+    $(".place").last().click(function() {
+      $("#show-place").show();
+      $("#show-place h3").text(newPlace.placeName);
+      //$(".place-name").text(newPlace.placeName);
+      $("#where-").text(newPlace.where);
+      $("#date-").text(newPlace.date);
+      $("#landmarks-").text(newPlace.landmarks);
+      $("#notes-").text(newPlace.notes);
+
+    });
   });
 });
