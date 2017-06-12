@@ -1,12 +1,17 @@
-# _{Application Name}_
+# _Destinations I've Been_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Keeps track of destinations the user has traveled, June 12, 2017_
 
-#### By _**{List of contributors}**_
+#### By _**Mick Sexton**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Website keeps track of various destinations people have been to. Each destination must include multiple properties like location, landmarks, time of year, and various notes. When a user clicks on the destination name, it will display the rest of the properties._
+
+## Requirements
+
+* _Example: User clicks on Rome_
+* _Properties come up that detail out properties like Rome is in Italy, landmarks include the Colosseum, the Forum, and the Spanish Steps, visited in October 2013, and recommendation to take the bike tour_
 
 ## Setup/Installation Requirements
 
@@ -32,6 +37,6 @@ _{Tell me about the languages and tools you used to create this app. Assume that
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This software operates under the MIT license.*
 
-Copyright (c) 2017 **_{List of contributors or company name}_**
+Copyright (c) 2017 **_Mick Sexton_**
